@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Article 5, task 2</title>
+</head>
+<body>
+	<h1>Article 5, task 2</h1>
+	<script>
+		function Calculator() {
+			this.read = function read() {
+				a = prompt('a?', '');
+				b = prompt('b?', '');
+			}
+			this.sum = function sum() {
+				alert(Number(a) + Number(b));
+			}
+			this.mult = function mult() {
+				alert(Number(a) *
+				Number(b));
+			}
+		}
+		const calc = new Calculator();
+		calc.read();
+		calc.sum();
+		calc.mult();
+	</script>
+</body>
+</html>
