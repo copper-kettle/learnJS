@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Article 5, task 1</title>
+</head>
+<body>
+	<h1>Article 5, task 1</h1>
+	<script>
+		function camelize(str) {
+		return String(str).split('-').map(function(elem, index) {
+			if (index == 0) {
+				return elem;
+			} return elem[0].toUpperCase() + elem.slice(1);
+		}).join('');
+	}
+		alert(camelize("my-short-string"));
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Article 11, task 6</title>
+</head>
+<body>
+	<h1>Article 11, task 6</h1>
+	<script>
+		function getSecondsToday() {
+			let now = new Date();
+			let midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+			alert((now - midnight) / 1000);
+			//console.log(((now - midnight)/1000)/3600);
+		}
+		getSecondsToday();
+	</script>
+</body>
+</html>

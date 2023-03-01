@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Article 11, task 4</title>
+</head>
+<body>
+	<h1>Article 11, task 4</h1>
+	<script>
+		function getDateAgo(date, days) {
+			let start = date.getDate();
+			date.setDate(start - days);
+			alert(date.getDate());
+			
+			//console.log(date.getDate() + ' ' + date.getMonth() + ' ' + date.getFullYear());
+		}
+		
+		let date = new Date();
+		getDateAgo(date, 15)
+	</script>
+</body>
+</html>

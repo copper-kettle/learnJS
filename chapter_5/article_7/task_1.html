@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Article 7, task 1</title>
+</head>
+<body>
+	<h1>Article 7, task 1</h1>
+	<script>
+		let values = [
+			"Hare", "Krishna", "Hare", "Krishna","Krishna", "Krishna", "Hare", "Hare", ":-O"
+		];
+		function unique(arr) {
+			let s = new Set(arr);
+			return Array.from(s);
+		}
+
+		let ctrl = unique(values);
+		alert(ctrl);
+		//console.log(ctrl);
+	</script>
+</body>
+</html>

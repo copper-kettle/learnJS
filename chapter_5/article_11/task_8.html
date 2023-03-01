@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Article 11, task 8</title>
+</head>
+<body>
+	<h1>Article 11, task 7</h1>
+	<script>
+		
+		function formatDate(date) {
+			let delta = new Date - date;
+			if ((delta / 1000) < 1) {
+				return "прямо сейчас"
+			}
+			if ((delta / 1000) < 60) {
+				return Math.round(delta / 1000 ) + "сек. назад"
+			}
+			if ((delta / 60000) < 60) {
+				return Math.round(delta / 60000) + "мин. назад"
+			}
+			let day = date; 
+			 day = [
+				'0' + day.getDate(),
+				'0' + (day.getMonth() + 1),
+				'' + day.getFullYear(),
+				'0' + day.getHours(),
+				"0" + day.getMinutes()
+			].map(elem => elem.slice(-2));
+				return day.slice(0, 3).join('-') + ' ' + day.slice(3).join(':');
+	}
+		
+
+	console.log(formatDate(new Date(new Date - 1)));
+	console.log(formatDate(new Date(new Date - 30 * 1000)));
+	console.log(formatDate(new Date(new Date - 5 * 60 * 1000)));
+	console.log(formatDate(new Date(new Date - 86400 * 1000)));
+	</script>
+</body>
+</html>

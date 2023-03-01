@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Article 4, task 5</title>
+</head>
+<body>
+	<h1>Article 4, task 5</h1>
+	<script>
+		function getSum(arr) {
+			let res = 0;
+			let sum;
+			for (let i = 0; i < arr.length; i++) {
+				sum = 0;
+				for (let j = 0; j < arr.length; j++) {
+					sum += arr[j];
+					res = Math.max(res, sum);
+				}
+			}
+			alert(res);
+		}
+
+		let arr = [1, -2, 3, 4, -9, 6];
+		getSum(arr);
+	</script>
+</body>
+</html>
